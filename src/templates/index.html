@@ -1,0 +1,701 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+        <title>Cardboard VR | Gamificación e Inteligencia artifical</title>
+		
+		<!-- Mobile Specific Meta
+		================================================== -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!-- Favicon -->
+		<!-- <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png" /> -->
+		
+		<!-- CSS
+		================================================== -->
+		<!-- Fontawesome Icon font -->
+        <link rel="stylesheet" href="{{ url_for('static', filename = 'plugins/themefisher-font/style.css')}}">
+		<!-- bootstrap.min css -->
+        <link rel="stylesheet" href="{{ url_for('static', filename = 'plugins/bootstrap/dist/css/bootstrap.min.css')}}">
+		<!-- Animate.css -->
+        <link rel="stylesheet" href="{{ url_for('static', filename = 'plugins/animate-css/animate.css')}}">
+        <!-- Magnific popup css -->
+        <link rel="stylesheet" href="{{ url_for('static', filename = 'plugins/magnific-popup/dist/magnific-popup.css')}}">
+		<!-- Slick Carousel -->
+        <link rel="stylesheet" href="{{ url_for('static', filename = 'plugins/slick-carousel/slick/slick.css')}}">
+        <link rel="stylesheet" href="{{ url_for('static', filename = 'plugins/slick-carousel/slick/slick-theme.css')}}">
+		<!-- Main Stylesheet -->
+        <link rel="stylesheet" href="{{ url_for('static', filename = 'css/style.css')}}">
+
+			
+    </head>
+	
+    <body id="body" data-spy="scroll" data-target=".navbar" data-offset="50">
+	    <!--
+	    Start Preloader
+	    ==================================== -->
+		<!--<div id="preloader">
+			<div class="preloader">
+				<div class="sk-cube-grid">
+				  <div class="sk-cube sk-cube1"></div>
+				  <div class="sk-cube sk-cube2"></div>
+				  <div class="sk-cube sk-cube3"></div>
+				  <div class="sk-cube sk-cube4"></div>
+				  <div class="sk-cube sk-cube5"></div>
+				  <div class="sk-cube sk-cube6"></div>
+				  <div class="sk-cube sk-cube7"></div>
+				  <div class="sk-cube sk-cube8"></div>
+				  <div class="sk-cube sk-cube9"></div>
+				</div>
+			</div>
+		</div>-->
+        <!--
+        End Preloader
+        ==================================== -->
+
+ <!--
+Welcome Slider
+==================================== -->
+
+<section class="hero-area">
+	<div class="block">
+		<a href="https://youtube.com/shorts/YgfSDnk0ncw?feature=share">
+			<div class="video-button">
+			<i class="tf-ion-play"></i>
+
+		</div>
+		<h1>Experimenta la nueva realidad</h1>
+		<p>La empresa líder en producción de visores de realidad virtual del Perú, con los visores de siempre, ahora, con un nuevo servicio orientado a encuestas, gamificación, obtención de data y medición de satisfacción del cliente,
+		basado en inteligencia artificial y machine learning.</p>
+		<a data-scroll href="#portfolio" class="btn btn-transparent">Explorar</a>
+	</div>
+</section>	
+
+ <!-- 
+  Fixed Navigation
+  ==================================== -->
+    <header id="navigation" class="navbar navigation">
+        <div class="container">
+            <div class="navbar-header">
+              <!-- responsive nav button -->
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- /responsive nav button -->
+    
+                <!-- logo -->
+                <a class="navbar-brand logo" href="#body">
+                    <img src="{{ url_for('static', filename = 'images/logo.png')}}"  />
+                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g id="Group" transform="translate(2.000000, 2.000000)" stroke="#57CBCC" stroke-width="3">
+                                <ellipse id="Oval" cx="20.5" cy="20" rx="20.5" ry="20"></ellipse>
+                                <path d="M6,7 L33.5,34.5" id="Line-2" stroke-linecap="square"></path>
+                                <path d="M21,20 L34,7" id="Line-3" stroke-linecap="square"></path>
+                            </g>
+                        </g>
+                    </svg>
+                </a>
+            <!-- /logo -->
+        </div>
+
+        <!-- main nav -->
+        <nav class="collapse navbar-collapse navbar-right" role="Navigation">
+            <ul id="nav" class="nav navbar-nav navigation-menu">
+                <li><a data-scroll href="#body">Inicio</a></li>
+                <li><a data-scroll href="#about">Nosotros</a></li>
+				<li><a data-scroll href="#portfolio">Productos y servicios</a></li>
+				<li><a data-scroll href="#pricing">Promociones</a></li>
+				<li><a data-scroll href="#blog">Blog</a></li>
+                <li><a data-scroll href="#contact-us">Contacto</a></li>
+            </ul>
+        </nav>
+        <!-- /main nav -->
+  
+      </div>
+  </header>
+  <!--
+  End Fixed Navigation
+  ==================================== -->
+
+<!--
+		Start About Section
+		==================================== -->
+		<section class="bg-one about section">
+			<div class="container">
+				<div class="row">
+				
+					<!-- section title -->
+					<div class="title text-center wow fadeIn" data-wow-duration="1500ms" >
+						<h2>Nuestra<span class="color"></span> Historia</h2>
+						<div class="border"></div>
+					</div>
+
+
+<section id="about" class="section about-2 padding-0 bg-dark" >
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-6 padding-0 ">
+				<img class="img-responsive" src="{{ url_for('static', filename = 'images/about/about-business-man.jpg')}}" alt="">
+			</div>
+			<div class="col-md-6">
+				<div class="content-block">
+					<h2>Líderes en Visores de Realidad Virtual en el Perú.</h2>
+					<p>Somos una empresa orientada al cliente, con más de 10 años de experiencia en el mercado.</p>
+					<p>Somos productores de visores VR tanto para venta minorista como mayorista, orientado a eventos comerciales.</p>
+					<p>En el 2022 evolucionamos añadiendo un nuevo servicio al mercado referente a nuestras Encuestas gamificadas, basadas en realidad virtual e inteligencia artifical.</p>
+					<div class="row">
+						<div class="col-md-6">
+							<div class="media">
+								<div class="pull-left">
+									<i class="tf-circle-compass"></i>	
+								</div>
+
+								<div class="media-body">
+									<h4 class="media-heading">Mejor precio del mercado</h4>
+									<p>Muestra experiencia nos ha permitido mejorar la eficiencia en nuestros procesos productivos </p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="media">
+								<div class="pull-left">
+									<i class="tf-hotairballoon"></i>	
+								</div>
+
+								<div class="media-body">
+									<h4 class="media-heading">Fácil personalización</h4>
+									<p>Trabajamos de la mano con el cliente en sus diseños </p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<!-- Start Portfolio Section
+		=========================================== -->
+		<section class="portfolio section" id="portfolio">
+			<div class="container">
+				<div class="row " >
+					<div class="col-lg-12">
+					
+						<!-- section title -->
+						<div class="title text-center">
+							<h2>Productos & <span class="color">Servicios</span></h2>
+							<div class="border"></div>
+						</div>
+						<!-- /section title -->
+					</div> <!-- /end col-lg-12 -->
+				</div> <!-- end row -->
+				<div class="row">
+						<div class="col-md-12">
+							<div class="portfolio-filter">
+								<button  type="button" data-filter="all">Todos</button>
+								<button type="button" data-filter=".photography">Encuesta gamificada VR con IA</button>
+								<button type="button" data-filter=".design">Visores Inteligentes</button>
+								<button type="button" data-filter=".perso">Visores 100% personalizados</button>
+								<button type="button" data-filter=".semi">Visores semi personalizadoss</button>
+								<button type="button" data-filter=".classic">Visores clásicos</button>
+							</div>
+						</div>
+					</div>
+					<div class="row portfolio-items-wrapper">
+						<div class="mix col-md-4 photography">
+							<div class="portfolio-block">
+								<img class="img-responsive" src="{{ url_for('static', filename = 'images/portfolio/portfolio-1.jpg')}}" alt="">
+								<div class="caption">
+
+										<a class="search-icon image-popup" data-effect="mfp-with-zoom" href="{{ url_for('static', filename = 'images/portfolio/portfolio-1.jpg')}}" data-lightbox="image-1">
+											<i class="tf-ion-android-search"></i>
+										</a>
+										<h4><a href="">Encuesta VR con IA</a></h4>
+										<p>Encuesta gamificada en realidad virtual y medición de satisfacción del cliente con IA</p>
+								</div>
+							</div>
+						</div>
+						<div class="mix col-md-4 photography">
+							<div class="portfolio-block">
+									<img class="img-responsive" src="{{ url_for('static', filename = 'images/portfolio/portfolio-2.jpg')}}" alt="">
+									<div class="caption">
+										<a class="search-icon image-popup" data-effect="mfp-with-zoom" href="{{ url_for('static', filename = 'images/portfolio/portfolio-2.jpg')}}" data-lightbox="image-1">
+											<i class="tf-ion-android-search"></i>
+										</a>
+										<h4><a href="">Encuesta VR con IA</a></h4>
+										<p>Pruébalo gratis! descarga MetaDriverVR y juega:<a href="https://play.google.com/store/apps/details?id=com.Mejcom.MetaDriverVR"> AQUÍ</a><p>
+									</div>
+								</div>
+						</div>
+						<div class="mix col-md-4 photography">
+							<div class="portfolio-block">
+								<img class="img-responsive" src="{{ url_for('static', filename = 'images/portfolio/portfolio-3.jpg')}}" alt="">
+								<div class="caption">
+										<a class="search-icon image-popup" data-effect="mfp-with-zoom" href="{{ url_for('static', filename = 'images/portfolio/portfolio-3.jpg')}}" data-lightbox="image-1">
+											<i class="tf-ion-android-search"></i>
+										</a>
+										<h4><a href="">Encuesta VR con IA</a></h4>
+										<p>Dashboard personalizado de medición de resultados en tiempo real</p>
+									</div>
+								</div>
+						</div>
+						<div class="mix col-md-4 design">
+							<div class="portfolio-block">
+								<img class="img-responsive" src="{{ url_for('static', filename = 'images/portfolio/portfolio-4.jpg')}}" alt="">
+								<div class="caption">
+										<a class="search-icon image-popup" data-effect="mfp-with-zoom" href="{{ url_for('static', filename = 'images/portfolio/portfolio-4.jpg')}}" data-lightbox="image-1">
+											<i class="tf-ion-android-search"></i>
+										</a>
+										<h4><a href="">Visores Inteligentes</a></h4>
+										<p>Todos los productos que ofrecemos tienen la capacidad de llevar una encuesta gamificada VR con IA a través de un código QR en el visor</p>
+									</div>
+								</div>
+						</div>
+						<div class="mix col-md-4 perso">
+							<div class="portfolio-block">
+								<img class="img-responsive" src="{{ url_for('static', filename = 'images/portfolio/portfolio-5.jpg')}}" alt="">
+								<div class="caption">
+										<a class="search-icon image-popup" data-effect="mfp-with-zoom" href="{{ url_for('static', filename ='images/portfolio/portfolio-5.jpg')}}" data-lightbox="image-1">
+											<i class="tf-ion-android-search"></i>
+										</a>
+										<h4><a href="">Visores 100% personalizados</a></h4>
+										<p>Lo más vendidos</p>
+									</div>
+								</div>
+						</div>
+						<div class="mix col-md-4 perso" >
+							<div class="portfolio-block">
+								<img class="img-responsive" src="{{ url_for('static', filename = 'images/portfolio/portfolio-6.jpg')}}" alt="">
+								<div class="caption">
+										<a class="search-icon image-popup" data-effect="mfp-with-zoom" href="{{ url_for('static', filename = 'images/portfolio/portfolio-6.jpg')}}" data-lightbox="image-1">
+											<i class="tf-ion-android-search"></i>
+										</a>
+										<h4><a href="">Visores 100% personalizados</a></h4>
+										<p>Producción a partir de 100 unidades</p>
+									</div>
+								</div>
+						</div>
+						<div class="mix col-md-4 semi">
+							<div class="portfolio-block">
+								<img class="img-responsive" src="{{ url_for('static', filename = 'images/portfolio/portfolio-7.jpg')}}" alt="">
+								<div class="caption">
+										<a class="search-icon image-popup" data-effect="mfp-with-zoom" href="{{ url_for('static', filename = 'images/portfolio/portfolio-7.jpg')}}" data-lightbox="image-1">
+											<i class="tf-ion-android-search"></i>
+										</a>
+										<h4><a href="">Visores semi personalizados</a></h4>
+										<p>Visores clásicos con logo color negro</p>
+									</div>
+								</div>
+						</div>
+						<div class="mix col-md-4 semi">
+							<div class="portfolio-block">
+								<img class="img-responsive" src="{{ url_for('static', filename = 'images/portfolio/portfolio-8.jpg')}}" alt="">
+								<div class="caption">
+										<a class="search-icon image-popup" data-effect="mfp-with-zoom" href="{{ url_for('static', filename = 'images/portfolio/portfolio-8.jpg')}}" data-lightbox="image-1">
+											<i class="tf-ion-android-search"></i>
+										</a>
+										<h4><a href="">Visores semi personalizados</a></h4>
+										<p>No hay mínimas cantidades para su producción</p>
+									</div>
+								</div>
+						</div>
+						<div class="mix col-md-4 classic">
+							<div class="portfolio-block">
+								<img class="img-responsive" src="{{ url_for('static', filename = 'images/portfolio/portfolio-9.jpg')}}" alt="">
+								<div class="caption">
+									<a class="search-icon image-popup" data-effect="mfp-with-zoom" href="{{ url_for('static', filename = 'images/portfolio/portfolio-9.jpg')}}" data-lightbox="image-1">
+										<i class="tf-ion-android-search"></i>
+									</a>
+									<h4><a href="">Visores clásicos</a></h4>
+									<p>El visor de siempre, color cartón</p>
+								</div>
+							</div>
+						</div>
+															
+					</div>
+						
+
+						
+			</div>	<!-- end container -->
+		</section>   <!-- End section -->
+
+<!-- Start Pricing section
+		=========================================== -->
+		
+		<section id="pricing" class="pricing section">
+			<div class="container">
+				<div class="row">
+					
+					<!-- section title -->
+				    <div class="title text-center wow fadeInDown" data-wow-duration="500ms">
+			        	<h2>Las mejores<span class="color"> Promociones</span></h2>
+				        <div class="border"></div>
+				    </div>
+				    <!-- /section title -->
+					
+					<!-- single pricing table -->
+					<div class="col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp" data-wow-duration="200ms">
+						<div class="price-item">
+							
+							<!-- plan name & value -->
+							<div class="price-title">
+								<h3>Free</h3>
+								<p><strong class="value">Visores Inteligentes</strong> /25,000 visores o más</p>
+							</div>
+							<!-- /plan name & value -->
+							
+							<!-- plan description -->
+							<ul>
+								<li>Por la compra de cualquier tipo de visor</li>
+								<li>Nuestra encuesta MetaDriverVR personalizada, en el visor con código QR</li>
+								<li>Base de datos en archivo plano</li>
+								<li>Dashboard de seguimiento a tiempo real</li>
+								<li>Acompañamiento a nivel negocio</li>
+								<li>Soporte técnico</li>
+							</ul>
+							<!-- /plan description -->
+							
+							<!-- signup button -->
+							<a class="btn btn-transparent" href="#contact-us">Contacto</a>
+							<!-- /signup button -->
+							
+						</div>
+					</div>
+					<!-- end single pricing table -->
+					
+					<!-- single pricing table -->
+					<div class="col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp" data-wow-duration="500ms" data-wow-delay="400ms">
+						<div class="price-item">
+						
+							<!-- plan name & value -->
+							<div class="price-title">
+								<p><strong class="value">MetaDriverVR</strong><h3>silver</h3>
+
+							</div>
+							<!-- /plan name & value -->
+							
+							<!-- plan description -->
+							<ul>
+								<li>20% de descuento</li>
+								<li>2 Encuestas MetaDriverVR personalizadas al año</li>
+								<li>Base de datos en archivo plano</li>
+								<li>Dashboard de seguimiento a tiempo real</li>
+								<li>Acompañamiento a nivel negocio</li>
+								<li>Soporte técnico</li>
+							</ul>
+							<!-- /plan description -->
+							
+							<!-- signup button -->
+							<a class="btn btn-transparent" href="#contact-us">Contacto</a>
+							<!-- /signup button -->
+							
+						</div>
+					</div>
+					<!-- end single pricing table -->
+					
+					<!-- single pricing table -->
+					<div class="col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp" data-wow-duration="500ms" data-wow-delay="600ms">
+						<div class="price-item">
+							
+							<!-- plan name & value -->
+							<div class="price-title">
+								<p><strong class="value">MetaDriverVR</strong><h3>Gold</h3>
+
+							</div>
+							<!-- /plan name & value -->
+							
+							<!-- plan description -->
+							<ul>
+								<li>30% de descuento</li>
+								<li>4 Encuestas MetaDriverVR personalizadas al año</li>
+								<li>Base de datos en archivo plano</li>
+								<li>Dashboard de seguimiento a tiempo real</li>
+								<li>Acompañamiento a nivel negocio</li>
+								<li>Soporte técnico</li>
+							</ul>
+							<!-- /plan description -->
+							
+							<!-- signup button -->
+							<a class="btn btn-transparent" href="#contact-us">Contacto</a>
+							<!-- /signup button -->
+							
+						</div>
+					</div>
+					<!-- end single pricing table -->
+					
+					<!-- single pricing table -->
+					<div class="col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp" data-wow-duration="500ms" data-wow-delay="750ms">
+						<div class="price-item">
+						
+							<!-- plan name & value -->
+							<div class="price-title">
+								<p><strong class="value">MetaDriverVR</strong><h3>Platinum</h3>
+
+							</div>
+							<!-- /plan name & value -->
+							
+							<!-- plan description -->
+							<ul>
+								<li>40% de descuento</li>
+								<li>9 Encuestas MetaDriverVR personalizadas al año</li>
+								<li>Base de datos en archivo plano</li>
+								<li>Dashboard de seguimiento a tiempo real</li>
+								<li>Acompañamiento a nivel negocio</li>
+								<li>Soporte técnico</li>
+							</ul>
+							<!-- /plan description -->
+							
+							<!-- signup button -->
+							<a class="btn btn-transparent" href="#contact-us">Contacto</a>
+							<!-- /signup button -->
+							
+						</div>
+					</div>
+					<!-- end single pricing table -->
+				    
+					
+				</div>       <!-- End row -->
+			</div>   	<!-- End container -->
+		</section>   <!-- End section -->
+
+<!--
+Start Blog Section
+=========================================== -->
+
+<section id="blog" class="section">
+	<div class="container">
+		<div class="row">
+
+			<!-- section title -->
+			<div class="title text-center wow fadeInDown">
+				<h2> Últimas <span class="color">Noticias</span></h2>
+			<div class="border"></div>
+			</div>
+			<!-- /section title -->
+
+			<div class="clearfix">
+
+				<!-- single blog post -->
+				<article class="col-md-4 col-sm-6 col-xs-12 clearfix wow fadeInUp" data-wow-duration="500ms">
+					<div class="post-block">
+						<div class="media-wrapper">
+							<img src="{{ url_for('static', filename = 'images/blog/blog-post-1.jpg')}}" alt="amazing caves coverimage" class="img-responsive">
+						</div>
+
+						<div class="content">
+							<h3><a href="">Mark Zuckerberg</a></h3>
+							<p>Randi, la hermana de Mark Zuckerberg, cree necesario conectar los diferentes metaversos para sacar el máximo potencial a la web3</p>
+							<a class="btn btn-transparent" href="https://www.businessinsider.es/randi-hermana-mark-zuckerberg-ve-necesario-conectar-metaversos-1110963">Leer más</a>
+						</div>
+					</div>
+				</article>
+				<!-- /single blog post -->
+
+				<!-- single blog post -->
+				<article class="col-md-4 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="200ms">
+					<div class="post-block">
+						<div id="gallery-post" class="media-wrapper">
+							<div class="item">
+								<img src="{{ url_for('static', filename = 'images/blog/blog-post-2.jpg')}}" alt="blog post" class="img-responsive">
+							</div>
+							<div class="item">
+								<img src="{{ url_for('static', filename = 'images/blog/blog-post-4.jpg')}}" alt="blog post | Meghna" class="img-responsive">
+							</div>
+						</div>
+
+						<div class="content">
+							<h3><a href="">¿Metaverso?</a></h3>
+							<p>Así funciona esto del metaverso</p>
+							<a class="btn btn-transparent" href="https://forbes.es/podcast/172503/como-funciona-el-metaverso/">Leer más</a>
+						</div>
+					</div>
+				</article>
+				<!-- end single blog post -->
+
+				<!-- single blog post -->
+				<article class="col-md-4 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="400ms">
+					<div class="post-block">
+						<div class="media-wrapper">
+							<img src="{{ url_for('static', filename = 'images/blog/blog-post-3.jpg')}}" alt="amazing caves coverimage" class="img-responsive">
+						</div>
+
+						<div class="content">
+							<h3><a href="">Bill Gates</a></h3>
+							<p>Bill Gates dice que la mayoría de las reuniones virtuales se trasladarán al metaverso dentro de 3 años, y los trabajadores interactuarán usando gafas y avatares de realidad virtual</p>
+							<a class="btn btn-transparent" href="https://www.businessinsider.es/bill-gates-anticipa-metaverso-acogera-reuniones-trabajo-978461">Leer más</a>
+						</div>
+					</div>
+				</article>
+				<!-- end single blog post -->
+			</div>
+
+			<div class="all-post text-center">
+				<a class="btn btn-main" href="https://www.businessinsider.es/tags/metaverso">Mirar más noticias</a>
+			</div>
+
+		</div> <!-- end row -->
+	</div> <!-- end container -->
+</section> <!-- end section -->
+
+
+<!-- Srart Contact Us
+=========================================== -->		
+<section id="contact-us" class="contact-us section-bg">
+	<div class="container">
+		<div class="row">
+			
+			<!-- section title -->
+			<div class="title text-center wow fadeIn" data-wow-duration="500ms">
+				<h2>Contáctanos <span class="color"></span></h2>
+				<div class="border"></div>
+			</div>
+			<!-- /section title -->
+			
+			<!-- Contact Details -->
+			<div class="contact-info col-md-6 wow fadeInUp" data-wow-duration="500ms">
+				<h3>Detalles de contacto</h3>
+				<p></p>
+				<div class="contact-details">
+					<div class="con-info clearfix">
+						<i class="tf-map-pin"></i>
+						<span>Lima, Perú / Madrid, España</span>
+					</div>
+					
+					<div class="con-info clearfix">
+						<i class="tf-ion-ios-telephone-outline"></i>
+						<span>Teléfonos o whatsapp.- Perú: +51 994355179 / +51 947397865 / +51 969721981</span>
+					</div>
+					<div class="con-info clearfix">
+						<i class="tf-ion-ios-telephone-outline"></i>
+						<span>Teléfonos o whatsapp.- España: +34 631291113</span>
+					</div>
+
+					<div class="con-info clearfix">
+						<i class="tf-ion-ios-email-outline"></i>
+						<span>Email: ventas.mejcomvr@gmail.com / jmejia@mejcom.com</span>
+					</div>
+				</div>
+			</div>
+			<!-- / End Contact Details -->
+				
+			<!-- Contact Form -->
+			<div class="contact-form col-md-6 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">
+				<form id="contact-form" method="post" action="sendmail.php" role="form">
+				
+					<div class="form-group">
+						<input type="text" placeholder="Tu nombre" class="form-control" name="name" id="name">
+					</div>
+					
+					<div class="form-group">
+						<input type="email" placeholder="Tu Email" class="form-control" name="email" id="email">
+					</div>
+					
+					<div class="form-group">
+						<input type="text" placeholder="Asunto" class="form-control" name="subject" id="subject">
+					</div>
+					
+					<div class="form-group">
+						<textarea rows="6" placeholder="Mensaje" class="form-control" name="message" id="message"></textarea>
+					</div>
+					
+					<div id="mail-success" class="success">
+						Gracias. Nuestro equipo se contactará contigo :)
+					</div>
+					
+					<div id="mail-fail" class="error">
+						Lo siento, algo está sucediendo. Intenta más tarde :(
+					</div>
+					
+					<div id="cf-submit">
+						<input type="submit" id="contact-submit" class="btn btn-transparent" value="Enviar">
+					</div>						
+					
+				</form>
+			</div>
+			<!-- ./End Contact Form -->
+		
+		</div> <!-- end row -->
+	</div> <!-- end container -->
+
+	
+</section> <!-- end section -->
+	
+
+
+		
+		
+		<!-- end Contact Area
+		========================================== -->
+		
+		<footer id="footer" class="bg-one">
+			<div class="container">
+			    <div class="row wow fadeInUp" data-wow-duration="500ms">
+					<div class="col-lg-12">
+						
+						<!-- Footer Social Links -->
+						<div class="social-icon">
+							<ul class="list-inline">
+								<li><a href="https://www.facebook.com/CardboardVRPeru"><i class="tf-ion-social-facebook"></i></a></li>
+								<li><a href="https://www.instagram.com/cardboard_vr_peru_metaverso/"><i class="tf-ion-social-instagram"></i></a></li>
+								<li><a href="https://www.youtube.com/channel/UCcCm3F4j_dz9xw7Wq5tnmNw"><i class="tf-ion-social-youtube"></i></a></li>
+
+							</ul>
+						</div>
+						<!--/. End Footer Social Links -->
+
+						<!-- copyright -->
+						<div class="copyright text-center">
+							<p>Design And Developed by Cardboard VR Euroamerica</a>. Copyright &copy; <script>document.write(new Date().getFullYear())</script>. All Rights Reserved.
+								<!--<br>Contáctame <a href="https://themefisher.com/free-bootstrap-templates/" target="_blank"></a>
+							</p>
+						</div>
+						<!-- /copyright -->
+						
+					</div> <!-- end col lg 12 -->
+				</div> <!-- end row -->
+			</div> <!-- end container -->
+		</footer> <!-- end footer -->
+
+		<div id="scroll-up">
+		</div>
+
+
+		<!-- 
+		Essential Scripts
+		=====================================-->
+		
+		<!-- Main jQuery -->
+		<script type="text/javascript" src="{{ url_for('static', filename = 'plugins/jquery/dist/jquery.min.js')}}"></script>
+		<!-- Bootstrap 3.1 -->
+		<script type="text/javascript" src="{{ url_for('static', filename = 'plugins/bootstrap/dist/js/bootstrap.min.js')}}"></script>
+		<!-- Slick Carousel -->
+		<script type="text/javascript" src="{{ url_for('static', filename = 'plugins/slick-carousel/slick/slick.min.js')}}"></script>
+		<!-- Portfolio Filtering -->
+		<script type="text/javascript" src="{{ url_for('static', filename = 'plugins/mixitup/dist/mixitup.min.js')}}"></script>
+		<!-- Smooth Scroll -->
+		<script type="text/javascript" src="{{ url_for('static', filename = 'plugins/smooth-scroll/dist/js/smooth-scroll.min.js')}}"></script>
+		<!-- Magnific popup -->
+		<script type="text/javascript" src="{{ url_for('static', filename = 'plugins/magnific-popup/dist/jquery.magnific-popup.min.js')}}"></script>
+		<!-- Google Map API -->
+		<script type="text/javascript"  src="http://maps.google.com/maps/api/js?sensor=false"></script>
+		<!-- Sticky Nav -->
+		<script type="text/javascript" src="{{ url_for('static', filename = 'plugins/Sticky/jquery.sticky.js')}}"></script>
+		<!-- Number Counter Script -->
+		<script type="text/javascript" src="{{ url_for('static', filename = 'plugins/count-to/jquery.countTo.js')}}"></script>
+		<!-- wow.min Script -->
+		<script type="text/javascript" src="{{ url_for('static', filename = 'plugins/wow/dist/wow.min.js')}}"></script>
+		<!-- Custom js -->
+		<script type="text/javascript" src="{{ url_for('static', filename = 'js/script.js')}}"></script>
+		
+    </body>
+</html>
